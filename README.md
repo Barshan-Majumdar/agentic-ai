@@ -1,172 +1,149 @@
-# Igris Soul
+# ⚔️ Igris Soul
 
-> Your personal AI assistant in the terminal, inspired by Igris from Solo Leveling.
->
-> Install it globally and summon Igris from anywhere:
->
-> ```bash
-> npm install -g igris-soul
-> Arise
-> ```
+> Your loyal AI companion in the terminal.
 
-## Disclaimer
+Igris Soul is a personal AI assistant that lives directly in your computer's terminal.
 
-This project sends your prompts to Google Gemini and may send web-search requests to Tavily. Do not enter passwords, private keys, personal data, confidential business information, or any other sensitive information into the assistant.
+Inspired by **Igris from Solo Leveling**, it combines **Google Gemini** with **Tavily web search** to help you ask questions, learn, search for recent information, and interact with an AI assistant without opening a browser.
 
-You are responsible for reviewing generated answers and for the API usage and charges associated with your API keys.
+You simply type:
 
-This project is provided for educational and personal use without guarantees about accuracy, availability, or fitness for a particular purpose.
+```bash
+Arise
+```
+
+And Igris awakens.
 
 ---
 
-## Requirements
+## ✨ What is Igris Soul?
 
-Before installing Igris Soul, make sure you have:
+Think of Igris Soul as your own AI assistant that runs directly from your terminal.
 
-* Node.js 20 or newer
-* A Google Gemini API key
-* A Tavily API key for current-information searches
-* An npm account if you want to install or publish the package through npm
+Instead of opening a website and starting a chat, open your terminal and type:
+
+```bash
+Arise
+```
+
+Igris comes online and waits for your commands.
+
+For example:
+
+```text
+Who are you?
+```
+
+```text
+Explain linked lists to me.
+```
+
+```text
+What are the latest AI developments?
+```
+
+```text
+What is happening in the Indian stock market?
+```
+
+Google Gemini handles the AI conversation, while Tavily allows Igris to search the web when fresh information is needed.
 
 ---
 
-# Installation
+## 🧠 What Can Igris Do?
 
-## Install Globally
+### 💬 AI Conversations
 
-To use Igris Soul from anywhere on your computer:
+Have natural conversations with your AI assistant.
+
+You can ask questions, learn concepts, brainstorm ideas, get explanations, or simply talk to Igris.
+
+### 🌐 Fresh Web Information
+
+Igris can search the web when you need information that may have changed recently.
+
+For example:
+
+```text
+What are the latest AI news in India?
+```
+
+```text
+What are the latest stock market trends?
+```
+
+### 👨‍💻 Programming Companion
+
+Igris can help with:
+
+* Programming concepts
+* Data structures
+* Algorithms
+* Debugging
+* Code explanations
+* Software development
+* Machine learning concepts
+* Technical questions
+
+### ⚔️ Solo Leveling Inspired Personality
+
+Igris isn't just another terminal chatbot.
+
+Its personality is inspired by the loyal knight **Igris** from Solo Leveling.
+
+Expect your AI assistant to have a little more character than the average chatbot.
+
+---
+
+# 🚀 Getting Started
+
+Don't worry if you're not a programmer.
+
+If you can copy and paste commands into a terminal, you can set up Igris.
+
+## Step 1 — Install Node.js
+
+Igris requires **Node.js 20 or newer**.
+
+If you already have Node.js installed, check your version:
+
+```bash
+node --version
+```
+
+If the version is `20` or higher, you're ready.
+
+If you don't have Node.js, install it from the official Node.js website:
+
+**https://nodejs.org/**
+
+After installing Node.js, reopen your terminal.
+
+---
+
+## Step 2 — Install Igris Soul
+
+Open your terminal and run:
 
 ```bash
 npm install -g igris-soul
 ```
 
-After installation, start Igris with:
+The `-g` means that Igris is installed globally.
+
+This allows you to use the `Arise` command from anywhere on your computer.
+
+---
+
+## Step 3 — Awaken Igris
+
+After installation, run:
 
 ```bash
 Arise
 ```
 
-You can run `Arise` from any directory.
-
-For example:
-
-```bash
-C:\Users\YourName> Arise
-```
-
-or:
-
-```bash
-D:\Projects\MyProject> Arise
-```
-
-or:
-
-```bash
-E:\Anything> Arise
-```
-
-Igris does not depend on the directory from which you launch it.
-
----
-
-# First-Time Setup
-
-On the first launch, Igris automatically creates its configuration directory in your home directory:
-
-```text
-~/.igris/
-```
-
-It will automatically create:
-
-```text
-~/.igris/
-├── .env
-└── user.json
-```
-
-You do **not** need to manually create these files.
-
-Igris will ask for the required API keys if they are not already configured:
-
-```text
-Enter your Gemini API key:
-Enter your Tavily API key:
-```
-
-The keys are then stored locally in:
-
-```text
-~/.igris/.env
-```
-
-On Windows, this is typically:
-
-```text
-C:\Users\YourName\.igris\.env
-```
-
-Your name is stored separately in:
-
-```text
-C:\Users\YourName\.igris\user.json
-```
-
-On future launches, Igris automatically loads the saved configuration.
-
----
-
-# Configuration
-
-The automatically created `.env` file contains:
-
-```env
-GENAI_API_KEY=your_google_gemini_api_key
-TAVILY_API_KEY=your_tavily_api_key
-```
-
-### Environment Variables
-
-| Variable         | Purpose                         |
-| ---------------- | ------------------------------- |
-| `GENAI_API_KEY`  | Google Gemini API key           |
-| `TAVILY_API_KEY` | Tavily API key for web searches |
-
-You can manually edit:
-
-```text
-~/.igris/.env
-```
-
-if you need to change your API keys.
-
-### Security
-
-Never commit or share your `.env` file.
-
-Never put real API keys inside the source code.
-
-The `.env` file contains sensitive credentials and should remain on your local machine.
-
-The project includes `.env.example` as a safe template:
-
-```env
-GENAI_API_KEY=
-TAVILY_API_KEY=
-```
-
----
-
-# Running Igris
-
-After installation:
-
-```bash
-Arise
-```
-
-You will see:
+You should see something similar to:
 
 ```text
 +----------------------+
@@ -178,18 +155,130 @@ Hi, My Lord, I am Igris, your loyal servant.
 How may I assist you today?
 ```
 
-You can then enter your prompts directly in the terminal.
+Igris is now online.
 
-Example:
+---
+
+# 🔑 First-Time Setup
+
+The first time you run Igris, it will ask for two API keys.
+
+Don't worry — this is a normal part of the setup.
+
+You will be asked for:
 
 ```text
-You: Explain binary search in Java
-
-Igris:
-...
+Enter your Gemini API key:
 ```
 
-To exit the assistant:
+and:
+
+```text
+Enter your Tavily API key:
+```
+
+You only need to provide these during setup.
+
+Igris automatically creates its own configuration folder and stores your keys locally.
+
+You **do not need to manually create a `.env` file**.
+
+---
+
+# 🗝️ Getting Your API Keys
+
+## Google Gemini API Key
+
+Igris uses Google's Gemini models to power its AI.
+
+You need a Gemini API key.
+
+Create one through Google's Gemini API / AI Studio platform:
+
+**https://aistudio.google.com/**
+
+When Igris asks for the key, simply paste it into the terminal.
+
+---
+
+## 🌐 Tavily API Key
+
+Tavily provides Igris with web-search capabilities.
+
+Create a Tavily API key through:
+
+**https://tavily.com/**
+
+When Igris asks for the key, paste it into the terminal.
+
+---
+
+# 📁 Where Does Igris Store My Configuration?
+
+Igris automatically creates:
+
+```text
+~/.igris/
+```
+
+Inside it, you'll find:
+
+```text
+.igris/
+├── .env
+└── user.json
+```
+
+### `.env`
+
+Stores your API keys locally.
+
+For example:
+
+```text
+GENAI_API_KEY=your_gemini_key
+TAVILY_API_KEY=your_tavily_key
+```
+
+### `user.json`
+
+Stores your name so Igris can remember how to address you.
+
+---
+
+# 🔐 API Key Safety
+
+Your API keys are stored in your local Igris configuration folder.
+
+You don't need to put your API keys inside the project source code.
+
+**Never share your API keys publicly.**
+
+Do not post them on:
+
+* GitHub
+* Social media
+* Screenshots
+* Public forums
+* Public code repositories
+
+---
+
+# 💻 Using Igris
+
+Once Igris is running, simply type your question.
+
+For example:
+
+```text
+You: Explain recursion in simple terms.
+```
+
+Igris will respond directly in your terminal.
+
+You can continue asking questions for as long as you want.
+
+To close Igris, type:
 
 ```text
 exit
@@ -203,183 +292,120 @@ quit
 
 ---
 
-# Features
+# ⚡ Quick Start
 
-* Interactive terminal-based AI assistant
-* Google Gemini-powered responses
-* Streaming AI responses
-* Tavily web search for current information
-* Conversation history during the current session
-* Personalized responses using your saved name
-* First-launch name setup
-* Persistent configuration
-* Automatic `.igris` directory creation
-* Automatic `.env` creation
-* Global CLI access
-* Runs from any directory
-* `Arise` command for launching the assistant
-
----
-
-# Local Development
-
-If you want to run Igris Soul directly from the source code instead of installing it globally:
-
-Clone or download the repository and enter the project directory.
-
-Install dependencies:
+If Node.js is already installed:
 
 ```bash
-npm install
+npm install -g igris-soul
 ```
 
-Then start Igris:
-
-```bash
-npm start
-```
-
-You can also run:
-
-```bash
-node index.js
-```
-
-The same `~/.igris/.env` configuration is used.
-
----
-
-# Test the Package Locally
-
-Before publishing a new version to npm, you can test the CLI directly from the package directory.
-
-Install the local package globally:
-
-```bash
-npm install -g .
-```
-
-Then run:
+Then:
 
 ```bash
 Arise
 ```
 
-This allows you to test the global CLI behavior using your local source code.
+That's it.
 
 ---
 
-# Updating Igris Soul
+# 🛠️ Available Commands
 
-When a new version is published, update your global installation with:
+You can launch Igris using:
 
 ```bash
-npm install -g igris-soul@latest
+Arise
 ```
 
-Your personal configuration remains outside the npm package:
+You can also use:
+
+```bash
+arise
+```
+
+```bash
+igris
+```
+
+```bash
+igris-soul
+```
+
+All of these launch the same Igris assistant.
+
+---
+
+# 🧩 How Igris Works
+
+At a high level, Igris combines several technologies:
 
 ```text
-~/.igris/
-├── .env
-└── user.json
+                YOU
+                 │
+                 ▼
+             ┌───────┐
+             │ IGRIS │
+             └───┬───┘
+                 │
+        ┌────────┴────────┐
+        ▼                 ▼
+   Google Gemini       Tavily Search
+   AI reasoning       Fresh web data
+        │                 │
+        └────────┬────────┘
+                 ▼
+             IGRIS RESPONSE
 ```
 
-Therefore, updating the package does not require you to enter your API keys again.
+### Google Gemini
+
+Provides the AI intelligence behind Igris.
+
+### Tavily
+
+Allows Igris to retrieve fresh information from the web when needed.
+
+### Terminal CLI
+
+Makes the entire experience available directly from your command line.
 
 ---
 
-# Uninstalling
+# 🧑‍💻 For Developers
 
-To remove the globally installed package:
+Igris Soul is built using:
+
+* Node.js
+* Google Gemini
+* LangChain
+* Tavily
+* Zod
+* dotenv
+
+Install it with:
 
 ```bash
-npm uninstall -g igris-soul
+npm install -g igris-soul
 ```
 
-Your personal Igris configuration remains in:
+Run it with:
+
+```bash
+Arise
+```
+
+Igris Soul is primarily designed as a **global terminal AI assistant**, rather than a library that you import into another application.
+
+---
+
+# 📦 npm Package
+
+Package name:
 
 ```text
-~/.igris/
+igris-soul
 ```
-
-If you want to completely remove your local Igris configuration as well, delete the `.igris` directory manually.
-
----
-
-# Publishing to npm
-
-If you are the package maintainer and want to publish a new version:
-
-First, log in to npm:
-
-```bash
-npm login
-```
-
-Verify your account:
-
-```bash
-npm whoami
-```
-
-Run the tests:
-
-```bash
-npm test
-```
-
-Check what will be included in the package:
-
-```bash
-npm publish --dry-run
-```
-
-If everything looks correct, publish:
-
-```bash
-npm publish
-```
-
-## Updating the Version
-
-npm does not allow publishing the same package version twice.
-
-For a bug fix:
-
-```bash
-npm version patch
-```
-
-For a new feature:
-
-```bash
-npm version minor
-```
-
-For a breaking change:
-
-```bash
-npm version major
-```
-
-Then publish the new version:
-
-```bash
-npm publish
-```
-
-Example:
-
-```text
-1.0.0 → 1.0.1
-```
-
----
-
-# Package Usage
-
-Igris Soul is primarily designed as a global terminal assistant.
 
 Install:
 
@@ -387,22 +413,106 @@ Install:
 npm install -g igris-soul
 ```
 
-Run:
+Launch:
 
 ```bash
 Arise
 ```
 
-The package is installed globally, while user-specific configuration is stored separately in:
+---
 
-```text
-~/.igris/
+# 🐛 Troubleshooting
+
+## `Arise` is not recognized
+
+Make sure Igris is installed globally:
+
+```bash
+npm install -g igris-soul
 ```
 
-This allows Igris to maintain its configuration independently of the directory from which it is launched.
+Then restart your terminal and run:
+
+```bash
+Arise
+```
+
+You can check whether Igris is installed with:
+
+```bash
+npm list -g igris-soul
+```
 
 ---
 
-# License
+## Igris asks for my API key again
 
-ISC
+This usually means the required API key isn't currently stored in your local Igris configuration.
+
+Simply enter the requested API key again.
+
+Igris will save it locally for future sessions.
+
+---
+
+## Igris doesn't provide recent information
+
+Make sure your Tavily API key is configured correctly.
+
+Tavily provides Igris's web-search capability.
+
+---
+
+# ❤️ Why I Built Igris
+
+Igris Soul started as an experiment in building a personal AI assistant that doesn't live inside a browser.
+
+The goal was simple:
+
+> **Make AI feel like a tool that's always available on your machine.**
+
+Open a terminal.
+
+Type:
+
+```bash
+Arise
+```
+
+And your assistant is ready.
+
+---
+
+# ⚔️ The Philosophy
+
+Igris is inspired by one simple idea:
+
+> **An assistant should be ready when you need it.**
+
+No browser.
+
+No complicated interface.
+
+Just your terminal, your commands, and your AI companion.
+
+---
+
+# 📜 License
+
+ISC License
+
+---
+
+# ⭐ Support the Project
+
+If you find Igris Soul useful, consider giving the project a ⭐ on GitHub and sharing it with other developers and AI enthusiasts.
+
+Every bit of support helps the project grow.
+
+---
+
+# ⚔️ Arise.
+
+Your terminal awaits.
+
+**Igris is ready, My Lord.**
