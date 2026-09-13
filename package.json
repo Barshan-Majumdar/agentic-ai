@@ -1,14 +1,27 @@
 {
-  "name": "agenticai",
-  "version": "1.0.0",
-  "description": "",
+  "name": "igris-soul",
+  "version": "1.1.1",
+  "description": "A terminal AI assistant powered by Gemini and Tavily.",
   "license": "ISC",
-  "author": "",
+  "author": "Barshan Majumdar",
   "type": "module",
   "main": "index.js",
+  "bin": {
+    "Arise": "index.js",
+    "arise": "index.js",
+    "igris-soul": "index.js",
+    "igris": "index.js"
+  },
+  "files": [
+    "index.js",
+    ".env.example"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "Arise": "node index.js"
+    "start": "node index.js",
+    "test": "node --check index.js"
   },
   "dependencies": {
     "@langchain/google-genai": "^2.3.2",
